@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 export default function MyComponent() {
   return (
     <View>
-      <Text>土屋太鳳のおっぱいもみたい</Text>
+      <Text>MyFirst App</Text>
     </View>
   );
 }
