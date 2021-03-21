@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 
 const App = () => {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <Text style={[styles.block, styles.red]}>RED</Text>
       <Text style={[styles.block, styles.blue]}>BLUE</Text>
       <Text style={[styles.block, styles.green]}>GREEN</Text>
