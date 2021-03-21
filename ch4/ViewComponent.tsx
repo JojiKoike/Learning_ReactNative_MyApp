@@ -1,6 +1,8 @@
 import React from 'react';
-import { View, Text, ViewStyle } from 'react-native';
+import { Text } from 'react-native';
+//import { View, Text, ViewStyle } from 'react-native';
 
+/*
 const App = () => {
   return (
     <View>
@@ -9,6 +11,7 @@ const App = () => {
     </View>
   );
 };
+*/
 
 const Fragment = () => {
   return (
@@ -19,6 +22,7 @@ const Fragment = () => {
   );
 };
 
+/*
 interface Props {
   style?: ViewStyle;
 }
@@ -30,5 +34,6 @@ const MyComponent = (props: Props) => {
     </View>
   );
 };
+*/
 
 export default Fragment;
