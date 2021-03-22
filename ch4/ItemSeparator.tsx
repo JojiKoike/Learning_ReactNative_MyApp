@@ -1,5 +1,6 @@
 import React from 'react';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
+import md5 from 'md5';
 
 const data = [
   { id: 'first', title: 'ひとつめ' },
@@ -15,6 +16,7 @@ const App = () => {
       ListHeaderComponent={() => <Text style={styles.header}>Header</Text>}
       ListFooterComponent={() => <Text style={styles.footer}>Footer</Text>}
       ItemSeparatorComponent={() => <View style={styles.separator} />}
+      keyExtractor={item => md5(JSON.stringify(item))}
     />
   );
 };
