@@ -12,6 +12,8 @@ const App = () => {
     <FlatList
       data={data}
       renderItem={({ item }) => <Text style={styles.label}>{item.title}</Text>}
+      ListHeaderComponent={() => <Text style={styles.header}>Header</Text>}
+      ListFooterComponent={() => <Text style={styles.footer}>Footer</Text>}
       ItemSeparatorComponent={() => <View style={styles.separator} />}
     />
   );
@@ -24,6 +26,16 @@ const styles = StyleSheet.create({
   separator: {
     height: 1,
     backgroundColor: 'gray',
+  },
+  header: {
+    height: 200,
+    fontSize: 14,
+    borderWidth: 1,
+  },
+  footer: {
+    height: 100,
+    fontSize: 16,
+    borderWidth: 1,
   },
 });
 
