@@ -14,7 +14,8 @@ const App = () => {
       data={data}
       renderItem={({ item }) => <Text style={styles.label}>{item.title}</Text>}
       keyExtractor={item => md5(JSON.stringify(item))}
-      horizontal
+      numColumns={2}
+      //horizontal
     />
   );
 };
@@ -25,6 +26,7 @@ const styles = StyleSheet.create({
   },
   label: {
     width: 200,
+    height: 200,
   },
 });
 
