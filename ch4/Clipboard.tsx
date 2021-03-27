@@ -23,7 +23,10 @@ const App = () => {
           Clipboard.setString(newContent);
           setContent(newContent);
         }}
-      />
+      >
+        <Text>set clipboard</Text>
+      </TouchableOpacity>
+
       <Text>{content}</Text>
     </View>
   );
