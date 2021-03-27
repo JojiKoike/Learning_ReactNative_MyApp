@@ -1,0 +1,30 @@
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { ProgressBar } from '@react-native-community/progress-bar-android';
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <ProgressBar />
+      <View style={styles.wrapper}>
+        <ProgressBar styleAttr="Horizontal" />
+      </View>
+      <View style={styles.wrapper}>
+        <ProgressBar styleAttr="Horizontal" indeterminate={false} progress={0.4} />
+      </View>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  wrapper: {
+    width: 256,
+  },
+});
+
+export default App;
