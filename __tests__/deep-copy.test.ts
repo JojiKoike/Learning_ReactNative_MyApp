@@ -22,4 +22,7 @@ describe('deepCopy', () => {
   test('引数と参照が異なるオブジェクトを返す', () => {
     expect(deepCopy(deepObject)).not.toBe(deepObject);
   });
+  it('returns cloned objects', () => {
+    expect(deepCopy(deepObject)).toEqual(deepObject);
+  });
 });
